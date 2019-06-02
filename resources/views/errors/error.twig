@@ -1,0 +1,26 @@
+{% extends "layout/header.twig" %}
+
+{% block content %}
+    <style type="text/css">
+        .error-template {padding: 40px 15px;text-align: center;}
+        .error-actions {margin-top:15px;margin-bottom:15px;}
+        .error-actions .btn { margin-right:10px; }
+    </style>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="error-template">
+                    <h1>
+                        Oops!</h1>
+                    <h2>
+                        Parece que ocurrió algún error
+                    </h2>
+                    <div class="alert alert-danger">
+                        {{ error }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

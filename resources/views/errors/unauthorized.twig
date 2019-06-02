@@ -1,0 +1,50 @@
+{% extends "layout/header.twig" %}
+
+{% block content %}
+    <style type="text/css">
+        .error-template {padding: 40px 15px;text-align: center;}
+        .error-actions {margin-top:15px;margin-bottom:15px;}
+        .error-actions .btn { margin-right:10px; }
+    </style>
+
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-12">
+                <div class="error-template">
+                    <h1>
+                        Oops!</h1>
+                    <h2>
+                        Parece que no estás logueado!
+                    </h2>
+                </div>
+            </div>
+            <div class="col-md-6 ">
+                <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Por favor, inicia sesión</h5>
+                            <form class="form-signin" action="/login" method="POST">
+                                <div class="form-group">
+                                    <label for="inputEmail" class="sr-only">Correo</label>
+                                    <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword" class="sr-only">Contraseña</label>
+                                    <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                                </div>
+                                <div class="form-group">
+                                    <div class="checkbox mb-3">
+                                        <label>
+                                            <input type="checkbox" value="remember-me"> Recuerdame
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-outline-dark btn-block" type="submit">Sign in</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

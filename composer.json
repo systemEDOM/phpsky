@@ -1,0 +1,19 @@
+{
+    "name": "systemedom/phpsky",
+    "description": "This is an MVC-based PHP for your projects",
+    "authors": [
+        {
+        "name": "Daniel Oseguera",
+        "email": "codigito.c@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "systemedom/phpsky-core": "dev-master"
+    },
+    "autoload" : {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}
