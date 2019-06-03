@@ -1,1 +1,4 @@
 /vendor
+/resources/storage/views
+/routes/web.php
+composer.lock
