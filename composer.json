@@ -11,7 +11,7 @@
     ],
     "require": {
         "php": ">=7.1.3",
-        "systemedom/phpsky-core": "dev-master"
+        "systemedom/phpsky-core": "^1.0.0"
     },
     "autoload" : {
         "psr-4": {
