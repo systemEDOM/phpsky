@@ -1,4 +1,4 @@
-# PHPSky by Daniel OSeguera
+# PHPSky by Daniel Oseguera
 =====================
 
 This is an MVC-based PHP skeleton for your projects. You can download this repository and start to work in your project, the skeleton has to work routes, middlewares, models, controllers, emails, eloquent, and more. You can see the components we use.
